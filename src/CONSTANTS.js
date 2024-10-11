@@ -8449,7 +8449,7 @@ export const SKILLS = {
   },
   outdoors_ranger_master: {
     title: "Master Ranger",
-    skillPoints: 1,
+    skillPoints: 0,
     preReqs: [
       "outdoors_ranger_movement_04",
       "outdoors_ranger_tracking_04",
@@ -8473,7 +8473,7 @@ export const SKILLS = {
   },
   outdoors_ranger_movement_01: {
     title: "",
-    skillPoints: 5,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_novice"],
     xp: { id: "scout", cost: 20000 },
     commands: ["conceal"],
@@ -8482,7 +8482,7 @@ export const SKILLS = {
   },
   outdoors_ranger_movement_02: {
     title: "",
-    skillPoints: 4,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_movement_01"],
     xp: { id: "scout", cost: 30000 },
     commands: [""],
@@ -8491,7 +8491,7 @@ export const SKILLS = {
   },
   outdoors_ranger_movement_03: {
     title: "",
-    skillPoints: 3,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_movement_02"],
     xp: { id: "scout", cost: 50000 },
     commands: [""],
@@ -8500,7 +8500,7 @@ export const SKILLS = {
   },
   outdoors_ranger_movement_04: {
     title: "Wayfarer",
-    skillPoints: 2,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_movement_03"],
     xp: { id: "scout", cost: 70000 },
     commands: [""],
@@ -8509,7 +8509,7 @@ export const SKILLS = {
   },
   outdoors_ranger_tracking_01: {
     title: "",
-    skillPoints: 5,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_novice"],
     xp: { id: "camp", cost: 20000 },
     commands: [""],
@@ -8518,7 +8518,7 @@ export const SKILLS = {
   },
   outdoors_ranger_tracking_02: {
     title: "",
-    skillPoints: 4,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_tracking_01"],
     xp: { id: "camp", cost: 30000 },
     commands: [""],
@@ -8527,7 +8527,7 @@ export const SKILLS = {
   },
   outdoors_ranger_tracking_03: {
     title: "",
-    skillPoints: 3,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_tracking_02"],
     xp: { id: "camp", cost: 40000 },
     commands: [""],
@@ -8536,7 +8536,7 @@ export const SKILLS = {
   },
   outdoors_ranger_tracking_04: {
     title: "Frontiersman",
-    skillPoints: 2,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_tracking_03"],
     xp: { id: "camp", cost: 60000 },
     commands: [""],
@@ -8545,7 +8545,7 @@ export const SKILLS = {
   },
   outdoors_ranger_harvest_01: {
     title: "",
-    skillPoints: 5,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_novice"],
     xp: { id: "scout", cost: 20000 },
     commands: ["areatrack_direction"],
@@ -8558,7 +8558,7 @@ export const SKILLS = {
   },
   outdoors_ranger_harvest_02: {
     title: "",
-    skillPoints: 4,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_harvest_01"],
     xp: { id: "scout", cost: 30000 },
     commands: ["areatrack_npc"],
@@ -8572,7 +8572,7 @@ export const SKILLS = {
   },
   outdoors_ranger_harvest_03: {
     title: "",
-    skillPoints: 3,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_harvest_02"],
     xp: { id: "scout", cost: 50000 },
     commands: ["areatrack_distance"],
@@ -8585,7 +8585,7 @@ export const SKILLS = {
   },
   outdoors_ranger_harvest_04: {
     title: "Tracker",
-    skillPoints: 2,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_harvest_03"],
     xp: { id: "scout", cost: 70000 },
     commands: ["areatrack_player"],
@@ -8599,7 +8599,7 @@ export const SKILLS = {
   },
   outdoors_ranger_support_01: {
     title: "",
-    skillPoints: 5,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_novice"],
     xp: { id: "trapping", cost: 20000 },
     commands: ["rescue"],
@@ -8608,7 +8608,7 @@ export const SKILLS = {
   },
   outdoors_ranger_support_02: {
     title: "",
-    skillPoints: 4,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_support_01"],
     xp: { id: "trapping", cost: 30000 },
     commands: [""],
@@ -8617,7 +8617,7 @@ export const SKILLS = {
   },
   outdoors_ranger_support_03: {
     title: "",
-    skillPoints: 3,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_support_02"],
     xp: { id: "trapping", cost: 50000 },
     commands: [""],
@@ -8626,7 +8626,7 @@ export const SKILLS = {
   },
   outdoors_ranger_support_04: {
     title: "Trap Master",
-    skillPoints: 2,
+    skillPoints: 0,
     preReqs: ["outdoors_ranger_support_03"],
     xp: { id: "trapping", cost: 70000 },
     commands: [""],
