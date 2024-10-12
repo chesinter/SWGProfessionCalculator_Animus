@@ -20,7 +20,13 @@ function SkillTree({
   handleSpeciesChange
 }) {
   const profession = ALL_PROFESSIONS[activeProfession];
-  const { branch_1, branch_2, branch_3, branch_4 } = profession;
+  const branches = [
+    profession.branch_1,
+    profession.branch_2,
+    profession.branch_3,
+    profession.branch_4
+  ].filter(branch => branch); // Filter out undefined branches
+  
   const playerSkillPoints = playerSkills
     .map((item) => SKILLS[item].skillPoints)
     .reduce((acc, item) => item + acc, 0);
@@ -50,8 +56,10 @@ function SkillTree({
         </option>
         {ALL_SPECIES.map((item) => {
           return (
-            <option value={item} selected={item == speciesSelected} >{item === "twilek" ? "Twi'Lek" : item.replace("_"," ")}</option>
-          )
+            <option key={item} value={item} selected={item === speciesSelected}>
+              {item === "twilek" ? "Twi'Lek" : item.replace("_"," ")}
+            </option>
+          );
         })}
       </select>
       <h2>{SKILL_TITLE[activeProfession]}</h2>
@@ -89,36 +97,19 @@ function SkillTree({
         handleSkillChange={handleSkillChange}
       />
 
-      <div className='skillBranches'>
-        <SkillBranch
-          data={branch_1}
-          playerSkills={playerSkills}
-          handleProfessionChange={handleProfessionChange}
-          handleActiveSkillChange={handleActiveSkillChange}
-          handleSkillChange={handleSkillChange}
-        />
-        <SkillBranch
-          data={branch_2}
-          playerSkills={playerSkills}
-          handleProfessionChange={handleProfessionChange}
-          handleActiveSkillChange={handleActiveSkillChange}
-          handleSkillChange={handleSkillChange}
-        />
-        <SkillBranch
-          data={branch_3}
-          playerSkills={playerSkills}
-          handleProfessionChange={handleProfessionChange}
-          handleActiveSkillChange={handleActiveSkillChange}
-          handleSkillChange={handleSkillChange}
-        />
-        <SkillBranch
-          data={branch_4}
-          playerSkills={playerSkills}
-          handleProfessionChange={handleProfessionChange}
-          handleActiveSkillChange={handleActiveSkillChange}
-          handleSkillChange={handleSkillChange}
-        />
+      <div className={`skillBranches ${branches.length === 1 ? 'single-branch' : ''}`}>
+        {branches.map((branch, index) => (
+          <SkillBranch
+            key={index}
+            data={branch}
+            playerSkills={playerSkills}
+            handleProfessionChange={handleProfessionChange}
+            handleActiveSkillChange={handleActiveSkillChange}
+            handleSkillChange={handleSkillChange}
+          />
+        ))}
       </div>
+
       <SkillBox
         data={profession.novice}
         isActive={playerSkills.indexOf(profession.novice) > -1}
@@ -140,3 +131,4 @@ function SkillTree({
 }
 
 export default SkillTree;
+

@@ -35,6 +35,16 @@ export const PROFESSIONS = {
     "Tailor",
     "Teras Kasi Artist",
     "Weaponsmith",
+// Let's add the legendaries at the bottom. Only CH done so far. Others commented until I can be bothered.
+//    "Carbineer Legend",
+//    "Commando  Legend",
+    "Creature Handler Legend",
+//    "Fencer Legend",
+//    "Pikeman Legend",
+//    "Pistoleer Legend",
+//    "Rifleman Legend",
+//    "Swordsman Legend",
+//    "Teras Kasi Artist Legend",
   ],
   forceSensitive: [
     "Combat Prowess",
@@ -42,7 +52,12 @@ export const PROFESSIONS = {
     "Crafting Mastery",
     "Heightened Senses",
   ],
-  jedi: ["Lightsaber", "Powers", "Healing", "Enchancements", "Defender"],
+  jedi: [
+	"Lightsaber", 
+	"Powers", 
+	"Healing", 
+	"Enchancements", 
+	"Defender"],
 };
 
 export const SKILL_TITLE = {
@@ -1741,9 +1756,154 @@ export const SKILL_TITLE = {
   teras_kasi_artist: "Teras Kasi Artist",
   vehicle_engineer: "Vehicle Engineer",
   xenobiologist: "Xenobiologist",
+// Lets add legends
+  outdoors_creaturehandler_legend: "Creature Handler Legend",
+  outdoors_creaturehandler_legendary_novice: "Creature Handler Legend Novice",
+  outdoors_creaturehandler_legendary_01: "Creature Handler Legend 1",
+  outdoors_creaturehandler_legendary_02: "Creature Handler Legend 2",
+  outdoors_creaturehandler_legendary_03: "Creature Handler Legend 3",
+  outdoors_creaturehandler_legendary_04: "Creature Handler Legend 4",
+  outdoors_creaturehandler_legendary_master: "Creature Handler Legend Master",
+  combat_carbineer_legend: "Carbineer Legend",
+  combat_commando_legend: "Commando Legend",
+  combat_1hsword_legend: "Fencer Legend",
+  combat_2hsword_legend: "Swordsman Legend",
+  combat_polearm_legend: "Pikeman Legend",
+  combat_pistol_legend: "Pistoleeer Legend",
+  combat_rifleman_legend: "Rifleman Legend",
+  combat_unarmed_legend: "Teras Kasi Artist Legend",
 };
 
 export const ALL_PROFESSIONS = {
+
+  combat_carbineer_legendary: {
+	master_links: [],
+	master:"combat_carbineer_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_carbineer_legendary_novice",
+			"combat_carbineer_legendary_01",
+			"combat_carbineer_legendary_02",
+			"combat_carbineer_legendary_03",
+			"combat_carbineer_legendary_04",
+		],
+},
+	novice: "combat_carbineer_legendary_novice",
+	novice_links: ["combat_carbineer"],
+},
+combat_commando_legendary: {
+	master_links: [],
+	master:"combat_commando_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_commando_legendary_novice",
+			"combat_commando_legendary_01",
+			"combat_commando_legendary_02",
+			"combat_commando_legendary_03",
+			"combat_commando_legendary_04",
+		],
+},
+	novice: "combat_commando_legendary_novice",
+	novice_links: ["combat_commando"],
+},
+combat_1hsword_legendary: {
+	master_links: [],
+	master:"combat_1hsword_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_1hsword_legendary_novice",
+			"combat_1hsword_legendary_01",
+			"combat_1hsword_legendary_02",
+			"combat_1hsword_legendary_03",
+			"combat_1hsword_legendary_04",
+		],
+},
+	novice: "combat_1hsword_legendary_novice",
+	novice_links: ["combat_1hsword"],
+},
+combat_2hsword_legendary: {
+	master_links: [],
+	master:"combat_2hsword_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_2hsword_legendary_novice",
+			"combat_2hsword_legendary_01",
+			"combat_2hsword_legendary_02",
+			"combat_2hsword_legendary_03",
+			"combat_2hsword_legendary_04",
+		],
+},
+	novice: "combat_2hsword_legendary_novice",
+	novice_links: ["combat_2hsword"],
+},
+combat_polearm_legendary: {
+	master_links: [],
+	master:"combat_polearm_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_polearm_legendary_novice",
+			"combat_polearm_legendary_01",
+			"combat_polearm_legendary_02",
+			"combat_polearm_legendary_03",
+			"combat_polearm_legendary_04",
+		],
+},
+	novice: "combat_polearm_legendary_novice",
+	novice_links: ["combat_polearm"],
+},
+combat_pistol_legendary: {
+	master_links: [],
+	master:"combat_pistol_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_pistol_legendary_novice",
+			"combat_pistol_legendary_01",
+			"combat_pistol_legendary_02",
+			"combat_pistol_legendary_03",
+			"combat_pistol_legendary_04",
+		],
+},
+	novice: "combat_pistol_legendary_novice",
+	novice_links: ["combat_pistol"],
+},
+combat_rifleman_legendary: {
+	master_links: [],
+	master:"combat_rifleman_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_rifleman_legendary_novice",
+			"combat_rifleman_legendary_01",
+			"combat_rifleman_legendary_02",
+			"combat_rifleman_legendary_03",
+			"combat_rifleman_legendary_04",
+		],
+},
+	novice: "combat_rifleman_legendary_novice",
+	novice_links: ["combat_rifleman"],
+},
+combat_unarmed_legendary: {
+	master_links: [],
+	master:"combat_unarmed_legendary",
+	branch_1: {
+		links: [],
+		skills: [
+			"combat_unarmed_legendary_novice",
+			"combat_unarmed_legendary_01",
+			"combat_unarmed_legendary_02",
+			"combat_unarmed_legendary_03",
+			"combat_unarmed_legendary_04",
+		],
+},
+	novice: "combat_unarmed_legendary_novice",
+	novice_links: ["combat_unarmed"],
+},
   social_entertainer: {
     master_links: [],
     master: "social_entertainer_master",
@@ -2468,7 +2628,7 @@ export const ALL_PROFESSIONS = {
     novice_links: ["outdoors_scout"],
   },
   outdoors_creaturehandler: {
-    master_links: [],
+    master_links: ["outdoors_creaturehandler_legend"],
     master: "outdoors_creaturehandler_master",
     branch_1: {
       links: [],
@@ -2508,6 +2668,23 @@ export const ALL_PROFESSIONS = {
     },
     novice: "outdoors_creaturehandler_novice",
     novice_links: ["outdoors_scout"],
+  },
+
+//Let's add the legendary profs. CH first.
+  outdoors_creaturehandler_legend: {
+	master_links: [""],
+	master: "outdoors_creaturehandler_legendary_master",
+	branch_1: {
+		links: [""],
+		skills: [
+			"outdoors_creaturehandler_legendary_01",
+			"outdoors_creaturehandler_legendary_02",
+			"outdoors_creaturehandler_legendary_03",
+			"outdoors_creaturehandler_legendary_04",
+		],
+	},
+	novice: "outdoors_creaturehandler_legendary_novice",
+	novice_links: ["outdoors_creaturehandler"],
   },
   outdoors_bio_engineer: {
     master_links: [],
@@ -2606,7 +2783,7 @@ export const ALL_PROFESSIONS = {
       ],
     },
     branch_2: {
-      links: [],
+    	  links: [],
       skills: [
         "crafting_weaponsmith_firearms_01",
         "crafting_weaponsmith_firearms_02",
@@ -3097,6 +3274,7 @@ export const ALL_PROFESSIONS = {
     novice: "outdoors_squadleader_novice",
     novice_links: ["outdoors_scout", "combat_marksman"],
   },
+  
   social_politician: {
     master_links: [],
     master: "social_politician_master",
@@ -4276,6 +4454,17 @@ force_discipline_defender_preternatural_defense_01:"Defender",
 force_discipline_defender_preternatural_defense_02:"Defender",
 force_discipline_defender_preternatural_defense_03:"Defender",
 force_discipline_defender_preternatural_defense_04:"Defender",
+  combat_unarmed_legendary_novice:"Teras Kasi Artist Legend",
+  combat_unarmed_legendary_01:"Teras Kasi Artist Legend",
+  combat_unarmed_legendary_02:"Teras Kasi Artist Legend",
+  combat_unarmed_legendary_03:"Teras Kasi Artist Legend",
+  combat_unarmed_legendary_04:"Teras Kasi Artist Legend",
+  combat_carbineer_legendary_novice:"Carbineer Legend",
+  combat_carbineer_legendary_01:"Carbineer Legend",
+  combat_carbineer_legendary_02:"Carbineer Legend",
+  combat_carbineer_legendary_03:"Carbineer Legend",
+  combat_carbineer_legendary_04:"Carbineer Legend",
+  
 };
 
 export const NOVICE_SKILL = {
@@ -4320,7 +4509,9 @@ export const NOVICE_SKILL = {
   Powers:	"force_discipline_powers",
   Healing:	"force_discipline_healing",
   Enchancements:	"force_discipline_enhancements",
-  Defender:	"force_discipline_defender"
+  Defender:	"force_discipline_defender",
+// Lets add the legendary
+  "Creature Handler Legend": "outdoors_creaturehandler_legend",
 };
 
 export const EXPERIENCE_TITLES = {
@@ -13804,6 +13995,93 @@ export const SKILLS = {
     },
     schematics: [""],
   },
+// Lets add the legendary skills
+  outdoors_creaturehandler_legendary_novice: {
+	title: "",
+	skillPoints: 0,
+	preReqs: ["outdoors_creaturehandler_master"],
+	xp: { id: "", cost: 0 },
+	commands: [""],
+	skillModifiers: [""],
+	schematics: [""],
+  },
+  outdoors_creaturehandler_legendary_01: {
+	title: "",
+	skillPoints: 0,
+	preReqs: ["outdoors_creaturehandler_legendary_novice"],
+	xp: {id: "creaturehandler", cost: 260000},
+	commands: [""],
+	skillModifiers: {
+		keep_creature: 1,
+		tame_level: 25,
+		stored_pets: 2,
+		tame_aggro: 5,
+		tame_non_aggro: 5,
+	},
+	schematics: [""],
+  },
+  outdoors_creaturehandler_legendary_02: {
+	title: "",
+	skillPoints: 0,
+	preReqs: ["outdoors_creaturehandler_legendary_01"],
+	xp: {id: "creaturehandler", cost: 520000},
+	commands: [""],
+	skillModifiers: {
+		keep_creature: 1,
+		tame_level: 50,
+		stored_pets: 2,
+		tame_aggro: 5,
+		tame_non_aggro: 5,
+	},
+	schematics: [""],
+  },
+  outdoors_creaturehandler_legendary_03: {
+	title: "",
+	skillPoints: 0,
+	preReqs: ["outdoors_creaturehandler_legendary_02"],
+	xp: {id: "creaturehandler", cost: 1120000},
+	commands: [""],
+	skillModifiers: {
+		keep_creature: 1,
+		tame_level: 75,
+		stored_pets: 2,
+		tame_aggro: 5,
+		tame_non_aggro: 5,
+	},
+	schematics: [""],
+  },
+  outdoors_creaturehandler_legendary_04: {
+	title: "",
+	skillPoints: 0,
+	preReqs: ["outdoors_creaturehandler_legendary_03"],
+	xp: {id: "creaturehandler", cost: 2240000},
+	commands: [""],
+	skillModifiers: {
+		keep_creature: 1,
+		tame_level: 100,
+		stored_pets: 2,
+		tame_aggro: 5,
+		tame_non_aggro: 5,
+	},
+	schematics: [""],
+  },
+  outdoors_creaturehandler_legendary_master: {
+	title: "Legendary Creature Handler",
+	skillPoints: 0,
+	preReqs: ["outdoors_creaturehandler_legendary_04"],
+	xp: {id: "creaturehandler", cost: 0},
+	commands: [""],
+	skillModifiers: {
+		keep_creature: 1,
+		tame_level: 125,
+		stored_pets: 2,
+		tame_aggro: 5,
+		tame_non_aggro: 5,
+	},
+	schematics: [""],
+  },
+
+
 };
 
 export const SKILL_MOD = {
