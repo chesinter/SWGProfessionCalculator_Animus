@@ -1821,7 +1821,7 @@ export const ALL_PROFESSIONS = {
       ],
     },
     branch_4: {
-      links: ["outdoors_squadleader"],
+      links: [],
       skills: [
         "outdoors_scout_camp_01",
         "outdoors_scout_camp_02",
@@ -1964,7 +1964,7 @@ export const ALL_PROFESSIONS = {
     novice_links: [""],
   },
   combat_marksman: {
-    master_links: ["combat_bountyhunter", "combat_commando"],
+    master_links: ["combat_commando"],
     master: "combat_marksman_master",
     branch_1: {
       links: ["combat_rifleman"],
@@ -1994,7 +1994,7 @@ export const ALL_PROFESSIONS = {
       ],
     },
     branch_4: {
-      links: ["science_combatmedic", "outdoors_squadleader"],
+      links: ["science_combatmedic", "outdoors_squadleader","combat_bountyhunter_novice"],
       skills: [
         "combat_marksman_support_01",
         "combat_marksman_support_02",
