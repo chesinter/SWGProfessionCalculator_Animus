@@ -1994,7 +1994,7 @@ export const ALL_PROFESSIONS = {
       ],
     },
     branch_4: {
-      links: ["science_combatmedic", "outdoors_squadleader","combat_bountyhunter_novice"],
+      links: ["science_combatmedic", "outdoors_squadleader","combat_bountyhunter"],
       skills: [
         "combat_marksman_support_01",
         "combat_marksman_support_02",
