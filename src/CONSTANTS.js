@@ -14069,7 +14069,7 @@ export const SKILLS = {
 	title: "Legendary Creature Handler",
 	skillPoints: 0,
 	preReqs: ["outdoors_creaturehandler_legendary_04"],
-	xp: {id: "creaturehandler", cost: 0},
+	xp: {id: "creaturehandler", cost: 4480000},
 	commands: [""],
 	skillModifiers: {
 		keep_creature: 1,
